@@ -17,7 +17,7 @@ void loop() {
 	if (toAndroid.available() > 0) {
 		char key = toAndroid.read();
 		Keyboard.press(key);
-		delay(100);
+		delay(25);
 		Keyboard.release(key);
 	}
 }
