@@ -10,7 +10,6 @@ void setup() {
   Keyboard.begin();
   
   toAndroid.begin(19200);
-  toAndroid.println("Begun");
 }
 
 void loop() {
