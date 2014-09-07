@@ -1,7 +1,8 @@
+#include "Arduino.h"
 
 void setup() {
   Keyboard.begin();
-  Keyboard.println("Hi!");
+  delay(1000);
 }
 
 void loop() {
