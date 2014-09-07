@@ -12,3 +12,12 @@ void setup() {
   toAndroid.begin(9600);
   toAndroid.println("Begun");
 }
+
+void loop() {
+	if (toAndroid.available() > 0) {
+		char key = toAndroid.read();
+		Keyboard.press(key);
+		delay(100);
+		Keyboard.release(key);
+	}
+}
