@@ -9,7 +9,7 @@ SoftwareSerial toAndroid(SS_RX, SS_TX);
 void setup() {
   Keyboard.begin();
   
-  toAndroid.begin(9600);
+  toAndroid.begin(19200);
   toAndroid.println("Begun");
 }
 
