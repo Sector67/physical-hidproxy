@@ -9,6 +9,14 @@ SoftwareSerial toAndroid(SS_RX, SS_TX);
 void setup() {
   Keyboard.begin();
   
-  toAndroid.begin(9600);
-  toAndroid.println("Begun");
+  toAndroid.begin(19200);
+}
+
+void loop() {
+	if (toAndroid.available() > 0) {
+		char key = toAndroid.read();
+		Keyboard.press(key);
+		delay(25);
+		Keyboard.release(key);
+	}
 }
