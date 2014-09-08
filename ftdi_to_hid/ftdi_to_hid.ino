@@ -1,6 +1,6 @@
 void setup() {
    // open the serial port. Note that it is Serial1 and not just Serial
-   Serial1.begin(115200);
+   Serial1.begin(19200);
    //wait for the serial port to become available
    while (!Serial1){;}
    //start the keyboard
